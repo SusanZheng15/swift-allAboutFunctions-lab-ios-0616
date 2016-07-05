@@ -15,6 +15,12 @@
  */
 // write your code here
 
+func frozen()
+{
+    print("Let it go!")
+}
+
+frozen()
 
 
 
@@ -24,14 +30,25 @@
  */
 // write your code here
 
+func frozenAgain()
+{
+    let letItGo = "Let it go!"
+    print(letItGo)
+}
 
-
+frozenAgain()
 
 /*: question3
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
 // write your code here
 
+func character (name: String)
+{
+    print("My favorite character is \(name)")
+}
+
+character("Elsa")
 
 
 
@@ -40,6 +57,9 @@
  */
 // write your code here
 
+character("Elza")
+var char = "Susan"
+character(char)
 
 
 
@@ -48,14 +68,23 @@
  */
 // write your code here
 
+func swift(number: Int) -> String
+{
+    return "I got \(number) problems but Swift ain't one"
+}
 
-
+swift(99)
 
 /*: question6
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
 // write your code here
 
+func favoriteBand(bandName: String, number: Int)
+{
+    print("My #\(number) favorite band is \(bandName)")
+}
+favoriteBand("Meh", number: 1)
 
 
 
@@ -66,7 +95,7 @@ func badFavoriteBand(bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName).")
 }
 
-badFavoriteBand("The Beatles", 2)
+badFavoriteBand("The Beatles", position: 2) //missing argument "position"
 
 
 
@@ -78,7 +107,7 @@ func alsoBadFavoriteBand(bandName: String, position: String) {
     print("My #\(position) favorite band is \(bandName)")
 }
 
-alsoBadFavoriteBand("Blink-182", position: 42)
+alsoBadFavoriteBand("Blink-182", position: "42") //"position takes in a string, initially was a Int before
 
 
 
@@ -88,6 +117,11 @@ alsoBadFavoriteBand("Blink-182", position: 42)
  */
 // write your code here
 
+func madLib(name: String, noun: String, preposition: String)
+{
+    print("To \(noun) and \(preposition), \(name)!")
+}
+madLib("Susan", noun: "place", preposition: "after")
 
 
 
@@ -97,6 +131,12 @@ alsoBadFavoriteBand("Blink-182", position: 42)
 // write your code here
 
 
+func toysStory()-> String
+{
+    return "Buzz Lightyear to the rescue!"
+}
+
+toysStory()
 
 
 /*: question11
@@ -104,6 +144,11 @@ alsoBadFavoriteBand("Blink-182", position: 42)
  */
 // write your code here
 
+func number()-> Int
+{
+    return 1
+}
+number()
 
 
 
@@ -112,8 +157,12 @@ alsoBadFavoriteBand("Blink-182", position: 42)
  */
 // write your code here
 
+func buzz(name: String)-> String
+{
+    return "To infinity and beyond, \(name.uppercaseString)!"
+}
 
-
+buzz("Woody")
 
 /*:
  [Solution](solution)
